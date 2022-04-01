@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8"/>
-	<title>popup</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>popup</title>
 </head>
-<body style="width:500px;min-height:100px;">
-	这里是popup。
-	<script type="text/javascript" src="js/popup.js"></script>
+
+<body style="width:500px;min-height:100px;margin:0 auto;">
+    <div class='title'>Chrome</div>
+    <div class="loginMain">
+        <div class="loginInput">
+            <span class="label-select">商户号：</span>
+            <input id="customerId" type="text" name="customerId" value="" placeholder="请输入商户号" />
+        </div>
+        <div class="loginInput">
+            <span class="label-select">用户名：</span>
+            <input id="userName" type="text" name="userName" value="" placeholder="请输入用户名" />
+        </div>
+         <div class="loginInput">
+            <span class="label-select">密&nbsp;&nbsp;&nbsp;码：</span>
+            <input id="password" type="password" name="password" value="" placeholder="请输入密码" />
+        </div>
+        <p id="loginErr" style="color:red">&nbsp;</p>
+
+        <input class="inputButton" id="loginIn" type="button" value="登  录">
+    </div>
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
 </body>
+
 </html>
